@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Type your title here</title>
+    <title>Rock Paper Scissors</title>
     <!-- Bootstrap Styles-->
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="resources/styles/styles.css" />
@@ -13,7 +13,29 @@
 <body>
     <div class="container">
         <!-- WORK FROM INSIDE THIS CONTAINER-->
+    <h1>Rock Paper Scissors</h1>
+    <div id="welcome-screen">Welcome</div>
 
+    <form id="name-form"></form>
+
+    <div>
+
+    <label for="name">Type Your Name Here</label>
+
+    <input type="text" id="username" name="username" required
+       minlength="4" maxlength="8" size="10">
+
+    <button id="start-game-button">Start Game!</button>
+    </div>
+    <div id="game-screen"></div>
+    <div id="score-tally"></div>
+    <p>User: 0 v CPU: 0</p>
+    <form>game-form</form>
+    <div>
+        <label></label>
+        <select></select>
+        <button>Go!</button>
+    </div>
     </div>
 
     <!-- Our own Scripts -->
