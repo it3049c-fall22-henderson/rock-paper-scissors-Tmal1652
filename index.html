@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Type your title here</title>
+    <title>Rock Paper Scissors</title>
     <!-- Bootstrap Styles-->
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="resources/styles/styles.css" />
@@ -13,7 +13,36 @@
 <body>
     <div class="container">
         <!-- WORK FROM INSIDE THIS CONTAINER-->
+    <h1>Rock Paper Scissors</h1>
+    <div id="welcome-screen"></div>
 
+    <form id="name-form"></form>
+
+    
+
+    <label for="name">Type Your Name Here</label>
+
+    <input type="text" id="username" name="username" required
+       minlength="4" maxlength="8" size="10" placeholder="Enter Name Here....">
+
+    <button id="start-game-button">Start Game!</button>
+    <button id="restart" class="restart-button">Restart the game</button>
+
+    <div id="game-screen"></div>
+    <div id="score-tally" class="score">
+        <p>User: 0 v CPU: 0</p>
+    </div>
+    <label>Select your choice</label>
+    <form action="/action_page.php">
+        <input type="radio" id="rock" name="pick" value="ROCK">
+        <label for="rock">Rock</label><br>
+        <input type="radio" id="paper" name="pick" value="PAPER">
+        <label for="paper">Paper</label><br>
+        <input type="radio" id="scissors" name="pick" value="scissors">
+        <label for="scissors">Scissors</label><br><br>
+        <input type="submit" value="Submit">
+      </form>
+   
     </div>
 
     <!-- Our own Scripts -->
